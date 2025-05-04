@@ -4,7 +4,7 @@
 # -> value: any
 # => path: $nbtPath = "data"
 #--------------------
-# <- result: any
+# .
 #--------------------
 # TODO: description
 #--------------------
