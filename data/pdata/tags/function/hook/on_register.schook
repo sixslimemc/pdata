@@ -1,0 +1,11 @@
+# pdata <> on_register
+% AS [player]
+--------------------
+.
+--------------------
+.
+--------------------
+! when a player registers with pdata (i.e. first joins the world).
+--------------------
+ [player] is the registering player.
+--------------------

@@ -16,9 +16,12 @@ execute unless score *join.exists _pdata matches 1 run function pdata:_/join/reg
 # get name:
 execute in varchunk:chunk run function pdata:_/join/get_name
 
+# set back:
 execute store result score @s pdata.index run data get storage pdata:_ var.join.entry.index
-
 function pdata:_/join/set_entry with storage pdata:_ var.join.entry
+
+# trigger register hook:
+execute unless score *join.exists _pdata matches 1 run function #pdata:hook/on_register
 
 data remove storage pdata:_ var.join
 scoreboard players reset *join.exists _pdata
