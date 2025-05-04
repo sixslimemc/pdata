@@ -1,0 +1,5 @@
+{
+    players[]: PlayerEntry
+    # order must not be changed.
+    # all read-only except {.data.<...>}
+}
