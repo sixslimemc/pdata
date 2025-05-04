@@ -1,0 +1,12 @@
+
+PlayerEntry := {
+    index: int
+    uuid: uuid
+    guuid: $guuid
+    username: string
+    data: {
+        <$namespace...>: {
+            ...
+        }
+    }
+}
