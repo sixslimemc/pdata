@@ -11,7 +11,7 @@
 # <path> is relative to {.data} in the entry.
 #--------------------
 # 1: set {pdata:data players[<index>].data.<path>}.
-# 0: failed to set {pdata:data players[<index>].<path>}.
+# 0: failed to set {pdata:data players[<index>].data.<path>}.
 #--------------------
 
 data remove storage pdata:out set
