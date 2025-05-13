@@ -4,9 +4,11 @@ PlayerEntry := {
     uuid: uuid
     guuid: $guuid
     username: string
-    data: {
-        <$namespace...>: {
-            ...
-        }
+    data: PlayerData
+}
+
+PlayerData := {
+    <$namespace...>: {
+        ...
     }
 }
