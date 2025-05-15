@@ -1,6 +1,6 @@
 #> pdata:_/join/main
 #--------------------
-# ../subscriber/doorman/on_join AS joiner
+# ../subscriber/doorman/join AS joiner
 #--------------------
 
 data modify storage pdata:_ var.join.uuid set from entity @s UUID
@@ -20,8 +20,8 @@ execute in varchunk:chunk run function pdata:_/join/get_name
 execute store result score @s pdata.index run data get storage pdata:_ var.join.entry.index
 function pdata:_/join/set_entry with storage pdata:_ var.join.entry
 
-# HOOK <> on_register:
-execute unless score *join.exists _pdata matches 1 run function #pdata:hook/on_register
+# HOOK <> register:
+execute unless score *join.exists _pdata matches 1 run function #pdata:hook/register
 
 data remove storage pdata:_ var.join
 scoreboard players reset *join.exists _pdata
