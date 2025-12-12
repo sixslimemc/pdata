@@ -1,0 +1,4 @@
+
+dispatch minecraft:storage[pdata:data] to struct Data {
+
+}
