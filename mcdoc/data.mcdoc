@@ -4,3 +4,7 @@ dispatch minecraft:storage[pdata:data] to struct Data {
     players: [PlayerEntry]
 }
 
+/// meant to be injected into
+struct PlayerData {
+    [PackId]: any
+}

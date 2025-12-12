@@ -1,0 +1,8 @@
+
+struct In {
+    path?: ::six::mcdoc::def::StructPath,
+}
+
+struct Out {
+    result: any
+}

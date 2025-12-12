@@ -1,0 +1,8 @@
+
+struct In {
+    path: ::six::mcdoc::def::StructPath,
+    value: any,
+    operation?: ::six::mcdoc::def::NbtOperation,
+}
+
+struct Out {}

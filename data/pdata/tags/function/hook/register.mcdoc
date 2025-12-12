@@ -1,5 +1,0 @@
-
-inject struct ::pdata::mcdoc::api::Hook {
-    /// called when a player first registers.
-    register: struct {}
-}

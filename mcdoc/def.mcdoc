@@ -7,5 +7,5 @@ struct PlayerEntry {
     uuid: Uuid,
     guuid: Guuid,
     username: string,
-    data: ::pdata::mcdoc::api::PlayerData
+    data: ::pdata::mcdoc::data::PlayerData
 }

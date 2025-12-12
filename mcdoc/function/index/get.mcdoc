@@ -1,0 +1,9 @@
+
+struct In {
+    index: ::six::mcdoc::def::ListIndexer,
+    path?: ::six::mcdoc::def::StructPath,
+}
+
+struct Out {
+    result: any
+}

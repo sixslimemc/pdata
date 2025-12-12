@@ -1,0 +1,5 @@
+
+dispatch minecraft:storage[pdata:hook] to struct Hook {
+    /// called when a player is first registered.
+    register: super::hook::register::Hook
+}

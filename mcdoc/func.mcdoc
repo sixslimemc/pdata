@@ -1,0 +1,9 @@
+
+dispatch minecraft:storage[pdata:in] to struct In {
+    get: (super::function::index::get::In | super::function::self::get::In),
+    set: (super::function::index::set::In | super::function::self::set::In),
+}
+dispatch minecraft:storage[pdata:out] to struct Out {
+    get: (super::function::index::get::Out | super::function::self::get::Out),
+    set: (super::function::index::set::Out | super::function::self::set::Out),
+}
