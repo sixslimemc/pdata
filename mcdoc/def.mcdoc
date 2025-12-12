@@ -1,0 +1,11 @@
+use ::six::mcdoc::def::Uuid
+use ::six::mcdoc::def::Guuid
+use ::slimecore::mcdoc::def::PackId
+
+struct PlayerEntry {
+    index: int,
+    uuid: Uuid,
+    guuid: Guuid,
+    username: string,
+    data: ::pdata::mcdoc::api::PlayerData
+}

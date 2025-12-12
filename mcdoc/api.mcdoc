@@ -14,12 +14,15 @@ dispatch minecraft:storage[pdata:api] to struct Api {
 
 }
 
-
-
 dispatch minecraft:storage[pdata:abstract/in] to struct AbstractIn {
 
 }
 
 dispatch minecraft:storage[pdata:abstract/out] to struct AbstractOut {
 
+}
+
+/// meant to be injected into
+struct PlayerData {
+    [PackId]: any
 }
