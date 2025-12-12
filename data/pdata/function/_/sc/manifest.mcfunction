@@ -1,7 +1,7 @@
 #> pdata:_/sc/manifest
 # @ MANIFEST
 
-data modify storage slimecore:in manifest.pack set value {}
+data remove storage slimecore:in manifest.pack
 
 data modify storage slimecore:in manifest.pack.pack_id set value "pdata"
 data modify storage slimecore:in manifest.pack.author_id set value "sixslime"
@@ -27,7 +27,6 @@ data modify storage slimecore:in manifest.pack.dependencies set value []
 data modify storage slimecore:in manifest.pack.dependencies append value {pack_id:"six", author_id:"sixslime", optional:false, version:{major:0, minor:1}, download:{url:"TODO", version:{major:1, minor:0, patch:0}}}
 data modify storage slimecore:in manifest.pack.dependencies append value {pack_id:"doorman", author_id:"sixslime", optional:false, version:{major:0, minor:1}, download:{url:"TODO", version:{major:1, minor:0, patch:0}}}
 data modify storage slimecore:in manifest.pack.dependencies append value {pack_id:"varchunk", author_id:"sixslime", optional:false, version:{major:0, minor:1}, download:{url:"TODO", version:{major:1, minor:0, patch:0}}}
-
 data modify storage slimecore:in manifest.pack.is_library set value true
 
 function slimecore:api/manifest
