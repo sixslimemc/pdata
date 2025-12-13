@@ -1,4 +1,0 @@
-
-dispatch minecraft:storage[pdata:config] to struct Config {
-
-}
