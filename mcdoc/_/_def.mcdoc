@@ -1,4 +1,5 @@
 
+use super::super::def::PlayerArray
 struct VariableRegister {
     [string]: any
 }
@@ -11,6 +12,9 @@ dispatch minecraft:storage[pdata:_] to struct {
     u: VariableRegister,
     /// in-scope temp
     x: VariableRegister,
+    disabled_storage: struct {
+        players: PlayerArray
+    }
 }
 dispatch minecraft:storage[pdata:_/in] to struct {
     [any]: any

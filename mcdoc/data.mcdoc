@@ -1,7 +1,7 @@
-use ::pdata::mcdoc::def::PlayerEntry
+use ::pdata::mcdoc::def::PlayerArray
 
 dispatch minecraft:storage[pdata:data] to struct Data {
-    players: [PlayerEntry]
+    players: PlayerArray
 }
 
 /// meant to be injected into

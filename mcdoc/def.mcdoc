@@ -9,3 +9,5 @@ struct PlayerEntry {
     username: string,
     data: ::pdata::mcdoc::data::PlayerData
 }
+
+type PlayerArray = [PlayerEntry]
