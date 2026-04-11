@@ -1,13 +1,19 @@
-use ::six::mcdoc::def::Uuid
-use ::six::mcdoc::def::Guuid
-use ::slimecore::mcdoc::def::PackId
+
+
+type Uuid = ::six::mcdoc::def::Uuid
+type Guuid = ::six::mcdoc::def::Guuid
+type PackId = ::slimecore::mcdoc::def::PackId
 
 struct PlayerEntry {
     index: int,
     uuid: Uuid,
     guuid: Guuid,
     username: string,
-    data: ::pdata::mcdoc::data::PlayerData
+    data: PlayerData
 }
 
 type PlayerArray = [PlayerEntry]
+
+type PlayerData = struct {
+	[#[dispatcher_key="pdata:player_data"] string]?: pdata:player_data[[%key]],
+}

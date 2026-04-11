@@ -4,7 +4,3 @@ dispatch minecraft:storage[pdata:data] to struct Data {
     players: PlayerArray
 }
 
-/// meant to be injected into
-struct PlayerData {
-    [PackId]: any
-}
