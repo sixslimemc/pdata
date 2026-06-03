@@ -9,7 +9,7 @@ data modify storage slimecore:in manifest.pack.version set value {major:0, minor
 data modify storage slimecore:in manifest.pack.url set value "https://github.com/sixslimemc/pdata/releases/download/v0.1.0/sixslime.pdata.0.1.0.zip"
 
 data modify storage slimecore:in manifest.pack.display.name set value "PlayerData"
-data modify storage slimecore:in manifest.pack.display.summary set value "A simple framework for defining and accessing player-linked data."
+data modify storage slimecore:in manifest.pack.display.summary set value "Simple framework for defining and accessing player-linked data."
 data modify storage slimecore:in manifest.pack.display.author_name set value "SixSlime"
 
 data modify storage slimecore:in manifest.pack.display.links.author set value "https://github.com/sixslimemc"
