@@ -10,11 +10,8 @@ data modify storage pdata:in get.index.uuid set from storage pdata:_ t.join.uuid
 execute store result score *join.exists _pdata run function pdata:index/get
 execute if score *join.exists _pdata matches 1 run data modify storage pdata:_ t.join.entry set from storage pdata:out get.result
 
-# DEBUG:
-tellraw @a ["OUT: ", {'storage':'pdata:out', 'nbt':''}]
-
 # register:
-execute unless score *join.exists _pdata matches 1 run function pdata:_/main/join/register
+execute if score *join.exists _pdata matches 0 run function pdata:_/main/join/register
 
 # get name:
 execute in varchunk:chunk run function pdata:_/main/join/get_name
@@ -24,7 +21,7 @@ execute store result score @s pdata.index run data get storage pdata:_ t.join.en
 function pdata:_/main/join/set_entry with storage pdata:_ t.join.entry
 
 # HOOK <> register:
-execute unless score *join.exists _pdata matches 1 run function #pdata:hook/register
+execute if score *join.exists _pdata matches 0 run function #pdata:hook/register
 
 data remove storage pdata:_ t.join
 scoreboard players reset *join.exists _pdata
