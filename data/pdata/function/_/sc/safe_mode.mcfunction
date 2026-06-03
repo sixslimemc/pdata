@@ -3,4 +3,4 @@
 
 # TODO
 
-tellraw @a [{color:red, text:"[!!!] Safemode for 'doorman' has not yet been implemented!"}]
+tellraw @a [{color:red, text:"[!!!] Safemode for 'pdata' has not yet been implemented!"}]
