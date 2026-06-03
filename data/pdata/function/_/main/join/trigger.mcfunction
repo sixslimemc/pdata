@@ -2,6 +2,7 @@
 #--------------------
 # _/subscriber/doorman/join AS joiner
 #--------------------
+tag @s remove _pdata.joined
 
 data modify storage pdata:_ t.join.uuid set from entity @s UUID
 

@@ -16,7 +16,7 @@ data modify storage slimecore:in manifest.pack.display.links.author set value "h
 data modify storage slimecore:in manifest.pack.display.links.info set value "https://github.com/sixslimemc/pdata"
 data modify storage slimecore:in manifest.pack.display.links.versions set value "https://github.com/sixslimemc/pdata/releases"
 
-data modify storage slimecore:in manifest.pack.entrypoints set value []
+data modify storage slimecore:in manifest.pack.entrypoints set value [{id:"main",after:[{pack_ref:"doorman",id:"main"}]}]
 
 data modify storage slimecore:in manifest.pack.preload_entrypoints set value []
 data modify storage slimecore:in manifest.pack.abstract_declarations set value []

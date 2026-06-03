@@ -3,4 +3,5 @@
 # @ hook: doorman:join
 #--------------------
 
-function pdata:_/main/join/trigger
+tag @s add _pdata.joined
+scoreboard players set *join_trigger _pdata 1
