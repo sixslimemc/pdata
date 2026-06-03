@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "TODO",
+    "description": "A simple framework for defining and accessing player-linked data. (Library)",
     "min_format": 101,
     "max_format": 101
   }
