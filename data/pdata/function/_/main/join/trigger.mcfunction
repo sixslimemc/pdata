@@ -11,7 +11,7 @@ execute store result score *join.exists _pdata run function pdata:index/get
 execute if score *join.exists _pdata matches 1 run data modify storage pdata:_ t.join.entry set from storage pdata:out get.result
 
 # DEBUG:
-tellraw @a ["OUT: ", {'storage':'pdata:_', 'nbt':'t.join.entry'}]
+tellraw @a ["OUT: ", {'storage':'pdata:out', 'nbt':''}]
 
 # register:
 execute unless score *join.exists _pdata matches 1 run function pdata:_/main/join/register

@@ -16,8 +16,8 @@
 
 execute unless data storage pdata:in set.operation run data modify storage pdata:in set.operation set value "set"
 
-execute store result score *x _pdata run function pdata:_/impl/index/set/main with storage pdata:in set
+execute store result score *return _pdata run function pdata:_/impl/index/set/main with storage pdata:in set
 
 data remove storage pdata:in set
 
-return run scoreboard players get *x _pdata
+return run scoreboard players get *return _pdata
